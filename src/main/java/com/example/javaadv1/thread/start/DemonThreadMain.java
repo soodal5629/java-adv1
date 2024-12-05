@@ -15,7 +15,8 @@ public class DemonThreadMain {
         public void run() {
             System.out.println(Thread.currentThread().getName() + ": run()");
             try {
-                Thread.sleep(10000); // 10초간 실행
+                // 10초간 실행(user 스레드가 모두 종료되면 그냥 데몬 스레드의 작업과는 상관없이 그냥 JVM이 끝나버림. 즉, 소용 없음)
+                Thread.sleep(10000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
