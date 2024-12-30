@@ -10,6 +10,8 @@ public class IncrementThreadMain {
 
     public static void main(String[] args) throws InterruptedException {
         test(new BasicInteger());
+        System.out.println("=========");
+        test(new VolatileInteger());
     }
 
     private static void test(IncrementInteger incrementInteger) throws InterruptedException {
