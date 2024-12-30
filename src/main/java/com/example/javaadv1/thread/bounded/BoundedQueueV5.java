@@ -8,6 +8,9 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import static com.example.javaadv1.util.MyLogger.log;
 
+/**
+ * 거의 실무에서 쓸 수 있을 정도의 코드임
+ */
 public class BoundedQueueV5 implements BoundedQueue {
     private final Queue<String> queue = new ArrayDeque<>();
     private final int max;
