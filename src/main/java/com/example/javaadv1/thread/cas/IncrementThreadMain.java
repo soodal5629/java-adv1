@@ -12,6 +12,8 @@ public class IncrementThreadMain {
         test(new BasicInteger());
         System.out.println("=========");
         test(new VolatileInteger());
+        System.out.println("=========");
+        test(new SyncInteger());
     }
 
     private static void test(IncrementInteger incrementInteger) throws InterruptedException {
