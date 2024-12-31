@@ -14,6 +14,8 @@ public class IncrementThreadMain {
         test(new VolatileInteger());
         System.out.println("=========");
         test(new SyncInteger());
+        System.out.println("=========");
+        test(new MyAtomicInteger());
     }
 
     private static void test(IncrementInteger incrementInteger) throws InterruptedException {
