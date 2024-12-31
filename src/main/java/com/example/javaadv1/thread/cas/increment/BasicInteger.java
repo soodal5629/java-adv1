@@ -1,7 +1,7 @@
-package com.example.javaadv1.thread.cas;
+package com.example.javaadv1.thread.cas.increment;
 
-public class VolatileInteger implements IncrementInteger {
-    volatile private int value;
+public class BasicInteger implements IncrementInteger {
+    private int value;
 
     @Override
     public void increment() {

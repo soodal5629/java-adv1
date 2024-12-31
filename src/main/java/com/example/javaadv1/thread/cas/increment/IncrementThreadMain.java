@@ -1,4 +1,4 @@
-package com.example.javaadv1.thread.cas;
+package com.example.javaadv1.thread.cas.increment;
 
 import java.util.ArrayList;
 import java.util.List;
