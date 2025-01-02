@@ -1,15 +1,18 @@
 package com.example.javaadv1.thread.collection.simple;
 
 import com.example.javaadv1.thread.collection.simple.list.BasicList;
+import com.example.javaadv1.thread.collection.simple.list.SimpleList;
+import com.example.javaadv1.thread.collection.simple.list.SyncList;
 
 import static com.example.javaadv1.util.MyLogger.log;
 
 public class SimpleListMainV2 {
     public static void main(String[] args) throws InterruptedException {
-        test(new BasicList());
+        //test(new BasicList());
+        test(new SyncList());
     }
 
-    private static void test(BasicList list) throws InterruptedException {
+    private static void test(SimpleList list) throws InterruptedException {
         log(list.getClass().getSimpleName());
         // A를 리스트에 저장하는 코드
         Runnable addA = new Runnable() {
